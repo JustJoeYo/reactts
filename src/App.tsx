@@ -1,34 +1,37 @@
 import { Route, Routes } from "react-router";
 import { BrowserRouter as Router } from "react-router-dom";
-import Navbar from "@/components/navbar";
 import { useState } from "react";
-import { SelectedPage } from "@/shared/types";
-import Home from "@/components/home";
+
+import 'tailwindcss/tailwind.css';
+import Header from './components/navigationbar/Header';
+import Particles from './components/particles/Particles';
+import { SelectedPage } from "./components/pages/types";
+import { About, Resume, Contact, Portfolio, PageNotFound} from "./components/pages/types";
 
 function App() {
-  const [selectedPage, setSelectedPage] = useState<SelectedPage>(SelectedPage.Home);
-  const [open, setOpen] = useState(true);
-
-  return (
-    <div className="app bg-primary-color h-screen border-border-color flex">
-      
-      <Navbar
-      selectedPage={selectedPage} 
-      setSelectedPage={setSelectedPage}
-      />
-      <div className="h-screen flex-1 p-7">
-
-      <div className="bg-secondary-color w-full h-full border-[1px] border-border-color ml-400px">
-        <Router>
+    const [selectedPage, setSelectedPage] = useState<SelectedPage>(SelectedPage.About);
+    return ( <>
+    <Header
+    selectedPage={selectedPage} 
+    setSelectedPage={setSelectedPage}
+    />
+    
+    <Particles/>
+    
+    <div className="flex justify-center items-center">
+    <Router>
           <Routes>
-            <Route path="/dashboard" element={<Home />} />
+            <Route path="/" element={<About />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/resume" element={<Resume />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<PageNotFound />} />
           </Routes>
-        </Router>
-      </div>
-      
-      </div>
+    </Router>
     </div>
-  )
+
+    </>);
 }
 
-export default App
+export default App;

@@ -1,23 +1,31 @@
 {
   "compilerOptions": {
-    "paths": {
-      "@/*": ["./src/*"]
-    },
-    "target": "ESNext",
+    "typeRoots" : ["node_modules/@types", "src/types"],
+    "target": "ES2020",
     "useDefineForClassFields": true,
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "allowJs": false,
-    "skipLibCheck": true,
-    "esModuleInterop": false,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
-    "moduleResolution": "Node",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "node",
+    "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
-    "isolatedModules": true,
+    "isolatedModules": false,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+
+    "outDir": "./build",                        /* Redirect output structure to the directory. */
+    "rootDir": "./src",                       /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */
+    "importHelpers": false,
+    "esModuleInterop": true,
+    "allowJs": true
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]

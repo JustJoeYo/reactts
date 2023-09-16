@@ -2,13 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body,
-#root {
-    height: 100%;
-    width: 100%;
-    font-family: "DM Sans", sans-serif;
-    font-size: 13px;
-    @apply bg-primary-color;
-    @apply text-font-color;
-};
+body {
+    background-color: black;
+    overflow-y: auto;
+    /* hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    /* hide scrollbar for Chrome, Safari and Opera */
+}
