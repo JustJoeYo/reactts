@@ -21,7 +21,7 @@ function App() {
     <div className="flex justify-center items-center">
     <Router basename="/reactts/">
           <Routes>
-            <Route path="" element={<About />} />
+            <Route path="/" element={<About />} />
             <Route path="about" element={<About />} />
             <Route path="resume" element={<Resume />} />
             <Route path="portfolio" element={<Portfolio />} />
