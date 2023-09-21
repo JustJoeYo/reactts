@@ -5,10 +5,6 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 
-function classNames(...classes: string[]) {
-  return classes.filter(Boolean).join(' ')
-}
-
 import { SelectedPage } from "../pages/types";
 import Link from './link'
 
