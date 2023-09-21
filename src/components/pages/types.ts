@@ -13,9 +13,9 @@ export {
 };
 
 export enum SelectedPage {
-  About = "about",
-  Resume = "resume",
-  Portfolio = "portfolio",
-  Contact = "contact",
+  About = "reactts/about",
+  Resume = "reactts/resume",
+  Portfolio = "reactts/portfolio",
+  Contact = "reactts/contact",
   PageNotFound = "404",
 };

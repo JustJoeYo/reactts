@@ -21,11 +21,11 @@ function App() {
     <div className="flex justify-center items-center">
     <Router>
           <Routes>
-            <Route path="/" element={<About />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/resume" element={<Resume />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/reactts/" element={<About />} />
+            <Route path="/reactts/about" element={<About />} />
+            <Route path="/reactts/resume" element={<Resume />} />
+            <Route path="/reactts/portfolio" element={<Portfolio />} />
+            <Route path="/reactts/contact" element={<Contact />} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>
     </Router>
