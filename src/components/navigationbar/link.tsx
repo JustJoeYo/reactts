@@ -13,7 +13,7 @@ function Link({ page, selectedPage, setSelectedPage, }: Props) {
     <a className={`${selectedPage === lowerCasePage ? "text-font-color-2" : "text-font-color"}
      transition duration-500 hover:text-font-color-3
     `}
-     href={`/${lowerCasePage}`} onClick={() => setSelectedPage(lowerCasePage)}>
+     href={`/${"reactts/"+lowerCasePage}`} onClick={() => setSelectedPage(lowerCasePage)}>
         {page}
     </a>
   )
