@@ -24,7 +24,7 @@ export default function about({}: Props) {
 
               <p className="mt-4 text-2xl pt-1 font-extrabold tracking-tight text-text-color sm:text-4xl flex justify-center">
                 <p className="whitespace-nowrap text-3xl font-extrabold text-stone-300">&lt;<span className="font-extrabold text-2xl text-indigo-600">div</span>&gt;
-                <span className=" text-2xl mx-2 font-extrabold leading-7 text-stone-400">I build</span></p>
+                <span className="text-2xl mx-2 font-extrabold leading-7 text-stone-400">I build</span></p>
                 <p className="text-xs pt-3 mx-5 font-black tracking-wide text-stone-300">
                 <TypeAnimation
                   
