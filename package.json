@@ -1,8 +1,8 @@
 {
   "name": "portfolio",
+  "homepage": "https://justjoeyo.github.io/reactts/",
   "private": true,
   "version": "0.0.0",
-  "home": "https://justjoeyo.github.io/reactts/",
   "type": "module",
   "scripts": {
     "dev": "vite",
