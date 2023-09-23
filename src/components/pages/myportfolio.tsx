@@ -3,7 +3,7 @@ type Props = {}
 export default function portfolio({}: Props) {
   return (
     <div className="flex-auto">
-      <h1 className="flex justify-center text-3xl font-bold text-text-color sm:text-4xl py-10">My <h1 className="mx-3 text-indigo-600">Projects:</h1></h1>
+      <h1 className="flex justify-center text-3xl font-bold text-text-color sm:text-4xl py-10">My <div className="mx-3 text-indigo-600">Projects:</div></h1>
       
       <div className=" flex items-center justify-center">
         <div className="bg-popclr/70 py-20 w-fit mx-8 border border-gray-700 rounded-2xl">
