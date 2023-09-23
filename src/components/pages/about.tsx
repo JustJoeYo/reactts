@@ -44,7 +44,6 @@ export default function about() {
                     repeat={Infinity}
                   />
                 </div>
-                <div className="animate-pulse p-0.5 pt-1 align-middle text-2xl font-bold text-white"></div>
                 <div className="text-2xl font-bold pt-1 text-stone-300 ">&lt;/<span className="text-2xl pt-1 font-bold text-indigo-600">div</span>&gt;</div>
               </p>
 
@@ -78,7 +77,7 @@ export default function about() {
                   <dt className="text-base font-semibold leading-7 text-text-color">
                     <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
                       <svg className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
-                      <path strokeLinecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"></path>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"></path>
                       </svg>
                     </div>
                     Age & Date of birth:
